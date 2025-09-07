@@ -10,18 +10,14 @@ import {
   Telegram,
   Email,
   Phone,
-  Facebook,
   Instagram,
-  Twitter,
 } from '@mui/icons-material';
 import { motion } from 'framer-motion';
 
 const Footer: React.FC = () => {
   const socialLinks = [
     { icon: <Telegram />, url: 'https://t.me/Easy_Kyrsach_bot', label: 'Telegram' },
-    { icon: <Facebook />, url: '#', label: 'Facebook' },
-    { icon: <Instagram />, url: '#', label: 'Instagram' },
-    { icon: <Twitter />, url: '#', label: 'Twitter' },
+    { icon: <Instagram />, url: 'https://www.instagram.com/kyrsovuchok?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==', label: 'Instagram' },
   ];
 
   const quickLinks = [
@@ -88,7 +84,7 @@ const Footer: React.FC = () => {
                   maxWidth: 400,
                 }}
               >
-                Ваш надійний помічник у навчанні. Ми допомагаємо студентам досягати академічних успіхів 
+                Ваш надійний помічник у навчанні. Ми допомагаємо студентам досягати академічних успіхів
                 через якісні навчальні роботи та професійну підтримку.
               </Typography>
               <Button
@@ -181,14 +177,14 @@ const Footer: React.FC = () => {
                   <Email sx={{ color: '#3b82f6', fontSize: '1.25rem' }} />
                   <Typography
                     component="a"
-                    href="mailto:support@studybot.com"
+                    href="mailto:kyrsovuchok@gmail.com"
                     sx={{
                       color: 'text.secondary',
                       textDecoration: 'none',
                       '&:hover': { color: '#3b82f6' },
                     }}
                   >
-                    support@studybot.com
+                    kyrsovuchok@gmail.com
                   </Typography>
                 </Box>
                 <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
@@ -251,19 +247,19 @@ const Footer: React.FC = () => {
             sx={{
               display: 'flex',
               flexDirection: { xs: 'column', md: 'row' },
-              justifyContent: 'space-between',
+              justifyContent: 'center', // Змінено для центрування
               alignItems: 'center',
               gap: 3,
+              textAlign: 'center', // Додано для центрування тексту
             }}
           >
             <Typography
               variant="body2"
               sx={{
                 color: 'text.secondary',
-                textAlign: { xs: 'center', md: 'left' },
               }}
             >
-              © 2024 Kyrsovuchok. Всі права захищено. Створено з ❤️ для студентів.
+              © 2025 Kyrsovuchok. Всі права захищено. Створено з ❤️ для студентів.
             </Typography>
             <Box
               sx={{
@@ -273,42 +269,6 @@ const Footer: React.FC = () => {
                 justifyContent: { xs: 'center', md: 'flex-end' },
               }}
             >
-              <Typography
-                component="a"
-                href="#"
-                sx={{
-                  color: 'text.secondary',
-                  textDecoration: 'none',
-                  fontSize: '0.875rem',
-                  '&:hover': { color: '#3b82f6' },
-                }}
-              >
-                Політика конфіденційності
-              </Typography>
-              <Typography
-                component="a"
-                href="#"
-                sx={{
-                  color: 'text.secondary',
-                  textDecoration: 'none',
-                  fontSize: '0.875rem',
-                  '&:hover': { color: '#3b82f6' },
-                }}
-              >
-                Умови користування
-              </Typography>
-              <Typography
-                component="a"
-                href="#"
-                sx={{
-                  color: 'text.secondary',
-                  textDecoration: 'none',
-                  fontSize: '0.875rem',
-                  '&:hover': { color: '#3b82f6' },
-                }}
-              >
-                Відмова від відповідальності
-              </Typography>
             </Box>
           </Box>
         </motion.div>
